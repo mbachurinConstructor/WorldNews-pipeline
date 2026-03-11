@@ -20,9 +20,10 @@ x-airflow-common: &airflow-common
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
     - ./scripts:/opt/airflow/scripts
     - ./aws:/opt/airflow/aws
+    - ./consts:/opt/airflow/consts
+    - ./news_api:/opt/airflow/news_api
   depends_on:
     airflow-postgres:
       condition: service_healthy

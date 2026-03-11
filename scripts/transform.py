@@ -1,4 +1,4 @@
-from scripts.extract import upload_to_s3
+from aws.aws_s3_upload import upload_to_s3
 from aws.aws_download_from_s3 import download_from_s3
 
 
@@ -27,14 +27,14 @@ def remove_fields(article: dict) -> dict:
 def transform_data(data:list) -> list:
     for i, article in enumerate(data):
         data[i] = remove_fields(data[i])
+        data[i] = flatten_article(data[i])
         data[i] = normalize_timestamp(data[i], tag="publishedAt")
         data[i] = normalize_timestamp(data[i], tag="fetchedAt")
-        data[i] = flatten_article(data[i])
         data[i] = handle_nulls(data[i])
     return data
 
-if __name__ == "__main__":
-    raw_data = download_from_s3("raw/")
+def run_transform(folder: str = "raw/"):
+    raw_data = download_from_s3(folder)
     transformed_data = transform_data(raw_data)
     upload_to_s3(transformed_data, key="transformed/")
     print(f"Transformed {len(transformed_data)} articles")

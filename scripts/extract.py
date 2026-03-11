@@ -14,6 +14,6 @@ def get_data(categories: list[str]) -> list:
 
 
 
-if __name__=="__main__":
+def run_extract(categories: list[str] = categories) -> None:
     data = get_data(categories)
     upload_to_s3(data, "raw/")
