@@ -1,4 +1,2 @@
 #!/bin/bash
-docker compose up airflow-init
-
-docker compose up -d
+docker compose up airflow-init --exit-code-from airflow-init
