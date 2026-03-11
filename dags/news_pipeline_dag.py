@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import sys
 
 
-sys.path.append(0, '/opt/airflow')
+sys.path.insert(0, '/opt/airflow')
 
 from scripts.extract import run_extract
 from scripts.transform import run_transform
