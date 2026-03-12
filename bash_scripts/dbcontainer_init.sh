@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run -d \
-  --name news-postgres \
+  --name worldnews-postgres \
   -e POSTGRES_USER=admin \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_DB=newsdb \

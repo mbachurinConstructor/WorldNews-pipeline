@@ -21,6 +21,8 @@ x-airflow-common: &airflow-common
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./scripts:/opt/airflow/scripts
+    - ./plugins:/opt/airflow/plugins
+    - ./logs:/opt/airflow/logs
     - ./aws:/opt/airflow/aws
     - ./consts:/opt/airflow/consts
     - ./news_api:/opt/airflow/news_api
@@ -57,15 +59,8 @@ services:
 
   airflow-init:
     <<: *airflow-common
-    command: >
-      bash -c "airflow db init &&
-               airflow users create
-               --username admin
-               --password admin
-               --firstname Admin
-               --lastname User
-               --role Admin
-               --email admin@example.com"
+    command:
+      bash -c "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com"
     restart: on-failure
 
   airflow-webserver:

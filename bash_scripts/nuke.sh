@@ -1,4 +1,7 @@
 #!/bin/bash
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$PROJECT_DIR"
+
 echo "Stopping and removing all containers..."
 docker compose down -v --remove-orphans
 

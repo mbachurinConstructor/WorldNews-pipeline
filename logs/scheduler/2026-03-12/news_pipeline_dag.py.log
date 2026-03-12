@@ -1,0 +1,43 @@
+[2026-03-12T21:13:12.513+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:12.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/news_pipeline_dag.py for tasks to queue
+[2026-03-12T21:13:12.519+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:12.518+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:13.554+0000] {processor.py:840} INFO - DAG(s) 'news_pipeline' retrieved from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:13.893+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.892+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:news_pipeline
+[2026-03-12T21:13:13.903+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.903+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:news_pipeline
+[2026-03-12T21:13:13.909+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.909+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:news_pipeline
+[2026-03-12T21:13:13.910+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.910+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-12T21:13:13.924+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.924+0000] {dag.py:3118} INFO - Creating ORM DAG for news_pipeline
+[2026-03-12T21:13:13.939+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:13.939+0000] {dag.py:3954} INFO - Setting next_dagrun for news_pipeline to 2026-03-12 20:00:00+00:00, run_after=2026-03-12 21:00:00+00:00
+[2026-03-12T21:13:13.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/news_pipeline_dag.py took 1.455 seconds
+[2026-03-12T21:13:44.118+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:44.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/news_pipeline_dag.py for tasks to queue
+[2026-03-12T21:13:44.121+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:44.121+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:44.367+0000] {processor.py:840} INFO - DAG(s) 'news_pipeline' retrieved from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:13:44.403+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:44.402+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-12T21:13:44.435+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:13:44.435+0000] {dag.py:3954} INFO - Setting next_dagrun for news_pipeline to 2026-03-12 20:00:00+00:00, run_after=2026-03-12 21:00:00+00:00
+[2026-03-12T21:13:44.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/news_pipeline_dag.py took 0.349 seconds
+[2026-03-12T21:14:14.638+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:14:14.639+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/news_pipeline_dag.py for tasks to queue
+[2026-03-12T21:14:14.642+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:14:14.642+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:14:14.976+0000] {processor.py:840} INFO - DAG(s) 'news_pipeline' retrieved from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:14:15.034+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:14:15.034+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-12T21:14:15.080+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:14:15.080+0000] {dag.py:3954} INFO - Setting next_dagrun for news_pipeline to 2026-03-12 20:00:00+00:00, run_after=2026-03-12 21:00:00+00:00
+[2026-03-12T21:14:15.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/news_pipeline_dag.py took 0.479 seconds
+[2026-03-12T21:16:34.150+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:16:34.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/news_pipeline_dag.py for tasks to queue
+[2026-03-12T21:16:34.153+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:34.153+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:16:34.875+0000] {processor.py:840} INFO - DAG(s) 'news_pipeline' retrieved from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:16:35.145+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.144+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:news_pipeline
+[2026-03-12T21:16:35.156+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.155+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:news_pipeline
+[2026-03-12T21:16:35.162+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.162+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:news_pipeline
+[2026-03-12T21:16:35.163+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.162+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-12T21:16:35.175+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.174+0000] {dag.py:3118} INFO - Creating ORM DAG for news_pipeline
+[2026-03-12T21:16:35.187+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:16:35.187+0000] {dag.py:3954} INFO - Setting next_dagrun for news_pipeline to 2026-03-12 20:00:00+00:00, run_after=2026-03-12 21:00:00+00:00
+[2026-03-12T21:16:35.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/news_pipeline_dag.py took 1.059 seconds
+[2026-03-12T21:17:05.362+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:17:05.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/news_pipeline_dag.py for tasks to queue
+[2026-03-12T21:17:05.365+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:17:05.365+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:17:05.597+0000] {processor.py:840} INFO - DAG(s) 'news_pipeline' retrieved from /opt/airflow/dags/news_pipeline_dag.py
+[2026-03-12T21:17:05.631+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:17:05.631+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-03-12T21:17:05.662+0000] {logging_mixin.py:188} INFO - [2026-03-12T21:17:05.662+0000] {dag.py:3954} INFO - Setting next_dagrun for news_pipeline to 2026-03-12 20:00:00+00:00, run_after=2026-03-12 21:00:00+00:00
+[2026-03-12T21:17:05.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/news_pipeline_dag.py took 0.330 seconds
