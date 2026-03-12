@@ -16,7 +16,15 @@ postgres_db=os.getenv("POSTGRES_DB")
 postgres_user=os.getenv("POSTGRES_USER")
 postgres_password=os.getenv("POSTGRES_PASSWORD")
 
-categories = ["technology", "business", "science", "health"]
+categories = [
+    "technology",
+    "business",
+    "science",
+    "health",
+    "sports",
+    "entertainment",
+    "general"
+]
 
 
 
