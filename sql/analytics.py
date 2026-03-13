@@ -1,6 +1,6 @@
 from scripts.db import get_connection
 
-queries = {
+queries : dict = {
     "Top 10 sources": """
         SELECT source_name, COUNT(*) as source_count
         FROM articles
@@ -30,12 +30,13 @@ queries = {
     """,
 }
 
-def display_row(row):
-    key, count = row[0], row[1]
+def display_row(row) -> None:
+    key : str = row[0]
+    count : str = row[1]
     print(f"{key} - {count}")
 
 
-def run_analytics():
+def run_analytics() -> None:
     connection = get_connection()
     cursor = connection.cursor()
     for name, query in queries.items():
