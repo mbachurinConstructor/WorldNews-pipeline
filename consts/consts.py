@@ -3,20 +3,20 @@ import os
 
 load_dotenv()
 
-news_api_key = os.getenv("NEWS_API_KEY")
-news_api_url = "https://newsapi.org/v2/top-headlines"
+news_api_key : str = os.getenv("NEWS_API_KEY")
+news_api_url : str = "https://newsapi.org/v2/top-headlines"
 
-aws_access_key = os.getenv("AWS_ACCESS_KEY")
-aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
-aws_bucket_name = os.getenv("AWS_BUCKET_NAME")
+aws_access_key : str = os.getenv("AWS_ACCESS_KEY")
+aws_secret_access_key : str = os.getenv("AWS_SECRET_ACCESS_KEY")
+aws_bucket_name : str = os.getenv("AWS_BUCKET_NAME")
 
-postgres_host=os.getenv("POSTGRES_HOST")
-postgres_port=os.getenv("POSTGRES_PORT")
-postgres_db=os.getenv("POSTGRES_DB")
-postgres_user=os.getenv("POSTGRES_USER")
-postgres_password=os.getenv("POSTGRES_PASSWORD")
+postgres_host : str =os.getenv("POSTGRES_HOST")
+postgres_port : str =os.getenv("POSTGRES_PORT")
+postgres_db : str =os.getenv("POSTGRES_DB")
+postgres_user : str =os.getenv("POSTGRES_USER")
+postgres_password : str =os.getenv("POSTGRES_PASSWORD")
 
-categories = [
+categories : list = [
     "technology",
     "business",
     "science",
