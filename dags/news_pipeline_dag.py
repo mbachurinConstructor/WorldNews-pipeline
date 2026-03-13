@@ -21,7 +21,7 @@ with DAG(
     default_args=default_args,
     description="Fetch news, transform, load to PostgreSQL",
     schedule_interval="@hourly",
-    start_date=datetime(2026, 3, 12),
+    start_date=datetime.now() - timedelta(hours=1),
     catchup=False,
 ) as dag:
     extract : PythonOperator = PythonOperator(
