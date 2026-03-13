@@ -33,8 +33,8 @@ def transform_data(data:list) -> list:
         data[i] = handle_nulls(data[i])
     return data
 
-def run_transform(folder: str = "raw/"):
-    raw_data = download_from_s3(folder)
-    transformed_data = transform_data(raw_data)
+def run_transform(folder: str = "raw/") -> None:
+    raw_data : list = download_from_s3(folder)
+    transformed_data : list = transform_data(raw_data)
     upload_to_s3(transformed_data, key="transformed/")
     print(f"Transformed {len(transformed_data)} articles")
