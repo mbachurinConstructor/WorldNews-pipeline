@@ -4,9 +4,9 @@ from consts.consts import categories
 
 
 def get_data(categories: list[str]) -> list:
-    data = []
+    data : list = []
     for category in categories:
-        articles = get_articles(category)["articles"]
+        articles : list = get_articles(category)["articles"]
         for article in articles:
             data.append(article)
     print(f"Fetched {len(data)} articles")
@@ -15,5 +15,5 @@ def get_data(categories: list[str]) -> list:
 
 
 def run_extract(categories: list[str] = categories) -> None:
-    data = get_data(categories)
+    data : list = get_data(categories)
     upload_to_s3(data, "raw/")
