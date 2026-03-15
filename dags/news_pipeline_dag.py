@@ -20,7 +20,7 @@ with DAG(
     dag_id="news_pipeline",
     default_args=default_args,
     description="Fetch news, transform, load to PostgreSQL",
-    schedule_interval="@hourly",
+    schedule_interval="0 */12 * * *",
     start_date=datetime.now() - timedelta(hours=1),
     catchup=False,
 ) as dag:
