@@ -3,7 +3,7 @@ from datetime import datetime
 
 from consts.consts import news_api_key, news_api_url
 
-def get_articles(category: str) -> dict or list:
+def get_articles(category: str) -> dict | list:
     response : requests.Response = requests.get(news_api_url, params={
         "apiKey": news_api_key,
         "category": category,
