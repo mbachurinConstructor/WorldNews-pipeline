@@ -6,6 +6,18 @@ Orchestrated with Apache Airflow and deployed with Docker Compose on a live VPS.
 
 ---
 
+## Live Pipeline
+
+The pipeline is deployed and running on a live VPS.
+
+![Airflow DAG runs](assets/Screenshot%202026-03-15%20at%2023.48.27.png)
+*Airflow grid view — every green square is a successful pipeline run across extract, transform, and load_to_db tasks*
+
+![DAG graph](assets/Screenshot%202026-03-15%20at%2023.48.31.png)
+*Task dependency graph showing the three-stage pipeline: extract → transform → load_to_db, each implemented as a PythonOperator*
+
+---
+
 ## Architecture
 
 ```
@@ -162,6 +174,9 @@ POSTGRES_PASSWORD=
 
 ```
 WorldNews-pipeline/
+├── assets/
+│   ├── Screenshot 2026-03-15 at 23.48.27.png   # Airflow grid view — successful runs
+│   └── Screenshot 2026-03-15 at 23.48.31.png   # DAG task dependency graph
 ├── dags/
 │   └── news_pipeline_dag.py     # Airflow DAG definition
 ├── scripts/
