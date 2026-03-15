@@ -16,6 +16,9 @@ The pipeline is deployed and running on a live VPS.
 ![DAG graph](assets/Screenshot%202026-03-15%20at%2023.48.31.png)
 *Task dependency graph showing the three-stage pipeline: extract → transform → load_to_db, each implemented as a PythonOperator*
 
+![Live server terminal](assets/Screenshot%202026-03-16%20at%2000.20.41.png)
+*Live server terminal showing: all 4 Docker containers running (31h uptime), Airflow scheduler logs with a successful scheduled run, and 1004 articles across 7 categories confirmed in the PostgreSQL warehouse*
+
 ---
 
 ## Architecture
@@ -176,7 +179,8 @@ POSTGRES_PASSWORD=
 WorldNews-pipeline/
 ├── assets/
 │   ├── Screenshot 2026-03-15 at 23.48.27.png   # Airflow grid view — successful runs
-│   └── Screenshot 2026-03-15 at 23.48.31.png   # DAG task dependency graph
+│   ├── Screenshot 2026-03-15 at 23.48.31.png   # DAG task dependency graph
+│   └── Screenshot 2026-03-16 at 00.20.41.png   # Live server terminal — containers, logs, DB counts
 ├── dags/
 │   └── news_pipeline_dag.py     # Airflow DAG definition
 ├── scripts/
