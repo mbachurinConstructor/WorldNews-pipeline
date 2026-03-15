@@ -20,10 +20,6 @@ categories : list = [
     "technology",
     "business",
     "science",
-    "health",
-    "sports",
-    "entertainment",
-    "general"
 ]
 
 
